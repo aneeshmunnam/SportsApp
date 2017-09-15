@@ -1,0 +1,153 @@
+<a href="#/athletes/get_athlete/{{athlete._id}}">Go Back</a>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Update Athlete Information</h3>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+    <div class="col-md-12">
+      <form ng-submit="updateAthlete()" ng-init="getAthlete()">
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" class="form-control" ng-model="athlete.name" placeholder="Enter Name">
+          </div>
+          <div class="form-group">
+            <label>Date of Birth</label>
+            <input type="text" class="form-control" ng-model="athlete.dob" placeholder="YYYY-MM-DD">
+          </div>
+          <div class="form-group">
+            <label>Nationality</label>
+            <input type="text" class="form-control" ng-model="athlete.nationality" placeholder="Enter Nationality">
+          </div>
+          <div class="form-group">
+            <label>Location</label>
+            <input type="text" class="form-control" ng-model="athlete.location" placeholder="Enter Location">
+          </div>
+          <div class="form-group">
+            <label>Association</label>
+            <input type="text" class="form-control" ng-model="athlete.association" placeholder="Enter Association">
+          </div>
+          <div class="form-group">
+            <label>Team</label>
+            <input type="text" class="form-control" ng-model="athlete.team" placeholder="Enter Team">
+          </div>
+          <div class="form-group">
+            <label>Gender</label>
+            <select class="form-control" ng-model="athlete.gender">
+              <option value="" disabled selected>Select Gender</option>
+              <option>Male</option>
+              <option>Female</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Sports</label>
+            <select ng-model="athlete.sports" multiple="multiple">
+              <option value="Golf">Golf</option>
+            <option value="Tennis">Tennis</option>
+            <option value="Cricket">Cricket</option>
+            <option value="Baseball">Basketball</option>
+            <option value="Baseball">Baseball</option>
+            <option value="American Football">American Football</option>
+            <option value="Aquatics">Aquatics</option>
+            <option value="Archery">Archery</option>
+            <option value="Automobile Racing">Automobile Racing</option>
+            <option value="Badminton">Badminton</option>
+            <option value="Beach Volleyball">Beach Volleyball</option>
+            <option value="Bobsleigh">Bobsleigh</option>
+            <option value="Body Building">Body Building</option>
+            <option value="Boxing">Boxing</option>
+            <option value="Cross Country Running">Cross Country Running</option>
+            <option value="Cross Country Skiing">Cross Country Skiing</option>
+            <option value="Curling">Curling</option>
+            <option value="Cycling">Cycling</option>
+            <option value="Darts">Darts</option>
+            <option value="Equestrianism">Equestrianism</option>
+            <option value="eSports">eSports</option>
+            <option value="Decathlon">Decathlon</option>
+            <option value="Fencing">Fencing</option>
+            <option value="Field Hockey">Field Hockey</option>
+            <option value="Figure Skating">Figure Skating</option>
+            <option value="Gymnastics">Gymnastics</option>
+            <option value="Ice Hockey">Ice Hockey</option>
+            <option value="Martial Arts">Martial Arts</option>
+            <option value="Mixed Martial Arts">Mixed Martial Arts</option>
+            <option value="Netball">Netball</option>
+            <option value="Modern Pentathlon">Modern Pentathlon</option>
+            <option value="Polo">Polo</option>
+            <option value="Racquetball">Racquetball</option>
+            <option value="Rowing">Rowing</option>
+            <option value="Sailing">Sailing</option>
+            <option value="Softball">Softball</option>
+            <option value="Skateboarding">Skateboarding</option>
+            <option value="Skeet Shooting">Skeet Shooting</option>
+            <option value="Snow Boarding">Snow Boarding</option>
+            <option value="Squash">Squash</option>
+            <option value="Surfing">Surfing</option>
+            <option value="Swimming">Swimming</option>
+            <option value="Track and Field">Track and Field</option>
+            <option value="Soccer">Soccer</option>
+            <option value="Skeleton">Skeleton</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>About</label>
+            <textarea class="form-control" ng-model="athlete.about" placeholder="Enter About"></textarea>
+          </div>
+          <div class="form-group">
+            <label>Interests</label>
+            <input type="text" class="form-control" ng-model="athlete.interests" placeholder="Enter Interests">
+          </div>
+          <div class="form-group">
+            <label>Charities</label>
+            <input type="text" class="form-control" ng-model="athlete.charities" placeholder="Enter Charities">
+          </div>
+          <div class="form-group">
+            <label>Facebook Url</label>
+            <input type="text" class="form-control" ng-model="athlete.facebook_url" placeholder="Enter Facebook Url">
+          </div>
+          <div class="form-group">
+            <label>Twitter Url</label>
+            <input type="text" class="form-control" ng-model="athlete.twitter_url" placeholder="Enter Twitter Url">
+          </div>
+          <div class="form-group">
+            <label>Instagram Url</label>
+            <input type="text" class="form-control" ng-model="athlete.instagram_url" placeholder="Enter Instagram Url">
+          </div>
+          <div class="form-group">
+            <label>Youtube Url</label>
+            <input type="text" class="form-control" ng-model="athlete.youtube_url" placeholder="Enter Youtube Url">
+          </div>
+          <div class="form-group">
+            <label>Pets</label>
+            <input type="text" class="form-control" ng-model="athlete.pets" placeholder="Enter pets">
+          </div>
+          <div class="form-group">
+            <label>Drinks Alcohol</label>
+            <select class="form-control" ng-model="athlete.drinksAlcohol">
+              <option value="" disabled selected>Drinks Alcohol</option>
+              <option>Yes</option>
+              <option>No</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Married</label>
+            <select class="form-control" ng-model="athlete.married">
+              <option value="" disabled selected>Select Marital Status</option>
+              <option>Married</option>
+              <option>Single</option>
+              <option>Divorced</option>
+              <option>Separated</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Image Url</label>
+            <input type="text" class="form-control" ng-model="athlete.image_url" placeholder="Enter image_url">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+      </div>
+    </form>
+    </div>
+    </div>
+  </div>
+</div>

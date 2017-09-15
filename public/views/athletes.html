@@ -1,0 +1,22 @@
+<div class="panel panel-default" ng-init="getAthletes()">
+  <div class="panel-heading">
+    <h3 class="panel-title">Athletes</h3>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+    	<div ng-repeat="athlete in athletes">
+    		<div class="col-md-6">
+    			<div class="col-md-6">
+    				<h4>{{athlete.name}}</h4>
+    				<b>Nationality</b>:{{athlete.nationality}}<br >
+            <b>Sports</b>:{{athlete.sports}}<br ><br >
+    				<a class="btn btn-primary" href="#/athletes/get_athlete/{{athlete._id}}">View Details</a>
+    			</div>
+          <div class="col-md-6">
+            <img class="thumbnail" src="{{athlete.image_url}}">
+          </div>
+			</div>
+    	</div>
+    </div>
+  </div>
+</div>
