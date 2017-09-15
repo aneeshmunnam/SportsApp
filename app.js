@@ -23,7 +23,7 @@ app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/athletes", athlete);
 
-var port = process.env.PORT || 8080;
+var port = process.env.PORT || 3000;
 
 app.listen(port, () => {
 	console.log("Listening on port 3000");
